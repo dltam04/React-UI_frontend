@@ -1,0 +1,48 @@
+(1) main.tsx runs first:
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+-> Boots the app by rendering <App /> into <div id="root"> in index.html
+
+(2) App.tsx gets rendered
+
+import ProductsPage from './pages/ProductsPage';
+function App() {
+  return <ProductsPage />;
+}
+
+(3) ProductsPage.tsx loads and runs (needs to update POST, GET_id, PUT and DELETE)
+
+useEffect(() => {
+  getProducts().then(setProducts).catch(console.error);
+}, []);
+
+(4) productService.ts handles the HTTP requests (needs to update POST, GET_id, PUT and DELETE)
+
+export async function getProducts(): Promise<Product[]> {
+  const res = await fetch('https://localhost:44384/api/Product');
+  return res.json();
+}
+
+(5) The data is passed to the UI
+
+- products is saved in state using setProducts()
+- The list is rendered in <ProductList products={products} />
+
+(6) Summary
+
+main.tsx
+   ↓
+App.tsx
+   ↓
+ProductsPage.tsx
+   ↓
+useEffect() → call getProducts()
+   ↓
+fetch() from your Web API
+   ↓
+Display via ProductList
