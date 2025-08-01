@@ -1,3 +1,5 @@
+// Support mostly for short and understandable import
+
 import path from 'path'
 import tailwindcss from "@tailwindcss/vite"
 import { defineConfig } from 'vite'
