@@ -1,3 +1,5 @@
+// File's role: assist the coder in real-time coding: suggestion, fixing withour running,...
+
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'

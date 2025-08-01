@@ -1,3 +1,5 @@
+# Ignore some files that no need to appear on commit or have no affect on the whole process
+
 # Logs
 logs
 *.log
