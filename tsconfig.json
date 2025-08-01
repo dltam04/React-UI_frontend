@@ -1,3 +1,5 @@
+// Defines global modeule resolution for the entire project
+
 {
   "files": [],
   "references": [
