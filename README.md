@@ -12,8 +12,13 @@
 - ESLint (linting with React/TS plugins)
 
 🚀 Getting Started
+
 git clone https://github.com/dltam04/React-UI_frontend.git
+
 cd React-UI_frontend
+
 npm install
+
 npm run dev
+
 Then open your browser at http://localhost:5173.
