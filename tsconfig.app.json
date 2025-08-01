@@ -1,3 +1,6 @@
+// Configures the TypeScript settings for the **frontend React application**
+// It includes all source files in the `src/` directory.
+
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
