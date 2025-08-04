@@ -2,7 +2,7 @@
 
 import type { Product } from '../models/Product';
 
-const API_BASE_URL = 'https://localhost:44384/api/Product';
+const API_BASE_URL = 'http://45.77.248.87:8080/api/Product';
 
 // getProducts request
 export async function getProducts(): Promise<Product[]> {
