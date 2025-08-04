@@ -16,7 +16,7 @@ export default function CheckoutPage() {
 
   const handleCheckout = async () => {
     try {
-      const response = await fetch("http://localhost:44384/api/checkout", {
+      const response = await fetch("http://45.77.248.87:8080/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ items }),
